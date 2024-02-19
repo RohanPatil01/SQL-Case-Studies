@@ -13,8 +13,9 @@ Welcome to the SQL Case Studies Repository! 🎉 This repository contains a coll
 
 The repository includes the following case studies:
 
-1. [Zomato Case Study](CaseStudy1/): 
-This case study, based on the Zomato dataset provided by CampusX, guides you through basic SQL topics like joins, grouping, sorting, and filtering. You'll solve 18 practical problems related to analyzing restaurant orders, customer behavior, and menu items. This case study is ideal for beginners looking to practice and improve their fundamental SQL skills.
+1. [Zomato Case Study](https://github.com/RohanPatil01/SQL-Case-Studies/tree/main/Zomato%20Case%20Study):
+
+   This case study, based on the Zomato dataset provided by CampusX, guides you through basic SQL topics like joins, grouping, sorting, and filtering. You'll solve 18 practical problems related to analyzing restaurant orders, customer behavior, and menu items. This case study is ideal for beginners looking to practice and improve their fundamental SQL skills.
 ## 🛠️ Usage Instructions
 
 To use this repository:
@@ -45,6 +46,6 @@ Each case study folder contains the following files:
 - `answers.sql`: SQL file containing the solutions to the questions. 💡
 ## 📜 License
 
-This repository is licensed under the [MIT License](LICENSE), which means you are free to use, modify, and distribute the content for any purpose.
+This repository is licensed under the [MIT License](/LICENSE.txt), which means you are free to use, modify, and distribute the content for any purpose.
 
 
