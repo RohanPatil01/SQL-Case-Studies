@@ -3,8 +3,8 @@ USE zomato;
 
 -- Q2. Count total number of orders
 SELECT COUNT(*) FROM orders;
--- Q3. Return n random records froms orders table i.e. finding 5 random samples.
 
+-- Q3. Return n random records from orders table i.e. finding 5 random samples.
 SELECT * FROM orders
 ORDER BY RAND() LIMIT 5;
 
@@ -33,7 +33,7 @@ ON m.r_id = r.r_id
 GROUP BY r_name
 ORDER BY menu_items DESC;
 
--- Q8. Find the number of votes and avg rating for all restaurants.
+-- Q8. Find the number of votes and average rating for all restaurants.
 SELECT r_name, COUNT(restaurant_rating) AS total_ratings, ROUND(AVG(restaurant_rating),2) AS ratings 
 FROM orders o
 JOIN restaurants r
@@ -49,7 +49,7 @@ GROUP BY t2.f_name
 ORDER BY num_occurance DESC 
 LIMIT 1;
 
--- Q10. Which restaurant had the maximum revenue in the month of May
+-- Q10. Which restaurant had the maximum revenue in May
 SELECT t1.r_name, SUM(amount) AS revenue 
 FROM restaurants t1
 JOIN orders t2
@@ -81,8 +81,7 @@ RIGHT JOIN users t2
 ON t1.user_id = t2.user_id
 WHERE t1.order_id IS NULL;
 
--- Q14. Show order details of particular customer in given date range. 
--- (For example, Order details of Neha from 5th june to 15th july 2022.)
+-- Q14. Show order details of particular customer in given date range. (For example, Order details of Neha from 5th june to 15th july 2022.)
 SELECT t1.order_id,t1.amount,  t3.f_name ,  t1.date
 FROM orders t1
 JOIN order_details t2 
